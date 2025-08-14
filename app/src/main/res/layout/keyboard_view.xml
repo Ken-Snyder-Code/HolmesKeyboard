@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kb_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="11">
+
+        <Button
+            android:id="@+id/key_ai_review"
+            style="@style/HolmesKey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:text="Secret button" />
+    </LinearLayout>
+
+
+    <!-- Row 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="10">
+
+        <Button android:id="@+id/key_q" android:text="q" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_w" android:text="w" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_e" android:text="e" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_r" android:text="r" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_t" android:text="t" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_y" android:text="y" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_u" android:text="u" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_i" android:text="i" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_o" android:text="o" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_p" android:text="p" style="@style/HolmesKey" />
+    </LinearLayout>
+
+    <!-- Row 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="9">
+
+        <Button android:id="@+id/key_a" android:text="a" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_s" android:text="s" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_d" android:text="d" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_f" android:text="f" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_g" android:text="g" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_h" android:text="h" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_j" android:text="j" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_k" android:text="k" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_l" android:text="l" style="@style/HolmesKey" />
+    </LinearLayout>
+
+    <!-- Row 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="7">
+
+        <Button android:id="@+id/key_z" android:text="z" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_x" android:text="x" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_c" android:text="c" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_v" android:text="v" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_b" android:text="b" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_n" android:text="n" style="@style/HolmesKey" />
+        <Button android:id="@+id/key_m" android:text="m" style="@style/HolmesKey" />
+    </LinearLayout>
+
+    <!-- Row 4: controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/key_del"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="0.6"
+            android:text="⌫" />
+
+        <Button
+            android:id="@+id/key_space"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1.8"
+            android:text="space" />
+
+        <Button
+            android:id="@+id/key_enter"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="0.6"
+            android:text="⏎" />
+    </LinearLayout>
+
+</LinearLayout>

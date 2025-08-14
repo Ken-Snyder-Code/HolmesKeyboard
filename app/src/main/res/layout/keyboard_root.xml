@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Vertical stack: (hidden) suggestion strip + your existing keyboard -->
+    <LinearLayout
+        android:id="@+id/keyboard_stack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Hidden for now; we'll use later for candidates -->
+        <LinearLayout
+            android:id="@+id/suggestion_strip"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:visibility="gone" />
+
+        <!-- Include your existing keyboard layout -->
+        <include layout="@layout/keyboard_view" />
+    </LinearLayout>
+
+    <!-- Optional overlay for future swipe tracking (keep it gone/not present for now) -->
+    <!-- We can add a SwipeOverlayView later when we actually process gestures. -->
+
+</FrameLayout>
